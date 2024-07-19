@@ -1,7 +1,7 @@
 @if (pokemons | async; as pokemons) {
   <ul>
-    @for (pokemon of pokemons.abilities; track pokemon) {
-      <li>{{pokemon.ability.name}}</li>
+    @for (pokemon of pokemons.results; track pokemon.name) {
+      <li>{{pokemon.name}}</li>
     } @empty {
       <li>No abilities</li>
     }

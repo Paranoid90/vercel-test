@@ -4,6 +4,7 @@ export const localeInterceptor: HttpInterceptorFn = (req: HttpRequest<unknown>, 
     const vercelId = req.headers.get('x-vercel-id');
     console.log('request intercept');
     
+    console.log('X-Powered-By: ', req.headers.get('X-Powered-By'));
     console.log('vercelId:', vercelId);
     
     return next(req)

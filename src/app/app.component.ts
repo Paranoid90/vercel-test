@@ -18,6 +18,6 @@ export class AppComponent {
   pokemons = new Observable<any>();
 
   ngOnInit() {
-    this.pokemons = this.http.get<Observable<any>>('https://pokeapi.co/api/v2/pokemon/ditto');
+    this.pokemons = this.http.get<Observable<any>>('https://pokeapi.co/api/v2/pokemon?limit=100');
   }
 }
