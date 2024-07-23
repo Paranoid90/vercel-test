@@ -1,3 +1,4 @@
+ENV: {{envVar}}
 @if (pokemons | async; as pokemons) {
   <ul>
     @for (pokemon of pokemons.results; track pokemon.name) {
