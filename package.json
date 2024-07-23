@@ -18,7 +18,11 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+<<<<<<< HEAD
     "dotenv": "^16.4.5",
+=======
+    "ngx-build-plus": "^17.0.0",
+>>>>>>> 80f089308578484c1a7d71af73e312ab88cbaecc
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"

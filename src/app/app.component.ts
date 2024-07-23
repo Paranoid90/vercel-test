@@ -18,7 +18,11 @@ export class AppComponent {
 
   pokemons = new Observable<any>();
 
+<<<<<<< HEAD
   envVar = environment.apiUrl;
+=======
+  apiUrl = environment.apiUrl;
+>>>>>>> 80f089308578484c1a7d71af73e312ab88cbaecc
 
   ngOnInit() {
     this.pokemons = this.http.get<Observable<any>>('https://pokeapi.co/api/v2/pokemon?limit=100');
