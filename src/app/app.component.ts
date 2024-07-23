@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../environments/environment.custom';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,8 @@ export class AppComponent {
   private http = inject(HttpClient);
 
   pokemons = new Observable<any>();
+
+  apiUrl = environment.apiUrl;
 
   ngOnInit() {
     this.pokemons = this.http.get<Observable<any>>('https://pokeapi.co/api/v2/pokemon?limit=100');
